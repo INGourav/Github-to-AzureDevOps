@@ -1,0 +1,16 @@
+# Moving From Github to Azure DevOps
+
+git remote -v         # to check remote of repo it will have fetch and pull link and both are same
+git pull              # to pull all latest data
+git remote rm origin  # to remove origin
+git remote -v         # now we will check remote origin link but they are not there
+
+
+Now add this one to Azure
+
+git remote add origin https://.............  # this can be download from first page of Azure Devops Project page
+git push -u origin --all   # this command will push this repo to Az DevOps, where -u means upstarem and --all means with all branches
+
+Now we can see repo and all older commits to.
+
+Now we have code on GitHub as well since we have not delete repo from there as we have only disconnected.
